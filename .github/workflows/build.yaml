@@ -8,7 +8,8 @@ on:
 
 env:
   DOCKER_REGISTRY: docker.pkg.github.com
-  REPO_NAME: salesforce/phoenix-mini
+  DOCKER_PATH: salesforce/docker-phoenix-mini
+  IMAGE_NAME: phoenix-mini
 
 jobs:
   build:
@@ -36,6 +37,6 @@ jobs:
       - name: Docker Push
         if: github.ref == 'refs/heads/master'
         run: |
-          REMOTE_IMAGE_ID=$DOCKER_REGISTRY/$REPO_NAME:latest
+          REMOTE_IMAGE_ID=$DOCKER_REGISTRY/$DOCKER_PATH/$IMAGE_NAME:latest
           docker tag phoenix-mini:latest $REMOTE_IMAGE_ID
           docker push $REMOTE_IMAGE_ID
