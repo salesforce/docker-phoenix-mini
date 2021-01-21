@@ -28,11 +28,11 @@ jobs:
       - name: Maven package
         run: mvn --batch-mode package
       - name: Docker Login
-          uses: azure/docker-login@v1
-          with:
-            login-server: ${{ env.DOCKER_REGISTRY }}
-            username: $GITHUB_ACTOR
-            password: ${{ secrets.GITHUB_TOKEN }}
+        uses: azure/docker-login@v1
+        with:
+          login-server: ${{ env.DOCKER_REGISTRY }}
+          username: $GITHUB_ACTOR
+          password: ${{ secrets.GITHUB_TOKEN }}
       - name: Docker Push
         if: github.ref == 'refs/heads/master'
         run: |
