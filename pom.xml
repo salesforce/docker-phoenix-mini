@@ -121,7 +121,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>${project.artifactId}</repository>
+                    <repository>phoenix-mini</repository>
                 </configuration>
             </plugin>
             <plugin>
