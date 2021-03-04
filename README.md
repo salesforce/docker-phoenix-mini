@@ -2,6 +2,8 @@
 
 A mini [Apache Phoenix](https://phoenix.apache.org/) cluster for local development and testing based on the official [HBaseTestingUtility](https://github.com/apache/hbase/blob/master/hbase-server/src/test/java/org/apache/hadoop/hbase/HBaseTestingUtility.java).
 
+> [docker pull salesforce/phoenix-mini](https://hub.docker.com/r/salesforce/phoenix-mini)
+
 The key configurations to make the embedded server working in docker are
 the following:
 
