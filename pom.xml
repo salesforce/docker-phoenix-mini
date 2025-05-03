@@ -13,7 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <required-maven-version>3.6.3</required-maven-version>
 
-        <hbase.version>1.5.0</hbase.version>
+        <hbase.version>1.7.1</hbase.version>
         <phoenix.version>4.15.0-HBase-1.5</phoenix.version>
 
         <maven-shade-plugin.version>3.2.2</maven-shade-plugin.version>
